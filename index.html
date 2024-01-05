@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="./assets/images/logo/logo.png" type="image/x-icon" />
+
+    <!--=============== BOXICONS ===============-->
+    <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet" />
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/arrow-down.css' rel='stylesheet'>
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <script>
+        // Hide the loader when the page is fully loaded
+        window.addEventListener("load", function() {
+            var loader = document.getElementById("loader-wrapper");
+            loader.style.opacity = 1;
+            setTimeout(function() {
+                loader.style.display = "none";
+            }, 1000); // adjust the delay to match your animation duration
+        });
+    </script>
+
+    <title>Bean Block Coffee Roasters</title>
+</head>
+
+<body>
+    <!--==================== LOADER ====================-->
+    <div class="loader-wrapper" id="loader-wrapper">
+        <div class="loader"></div>
+    </div>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <img src="./assets/images/logo/bean_block_logo.png" alt="logo" class="nav__logo-img" />
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#products" class="nav__link">Products</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="./assets/images/PDf/Barista Training Module 1 (1).pdf" download="./assets/images/PDf/Barista Training Module 1 (1).pdf" class="nav__link">Courses</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#blog" class="nav__link">Podcast</a>
+                    </li>
+                </ul>
+                <div class="nav__close" id="nav-close">
+                    <i class="bx bx-x"></i>
+                </div>
+            </div>
+            <!-- toggle button -->
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="bx bx-menu"></i>
+        </nav>
+    </header>
+
+    <!--==================== MAIN ====================-->
+    <main>
+        <!--==================== HOME ====================-->
+        <section class="home grid" id="home">
+            <video autoplay muted loop class="home__video">
+                <source src="./assets/images/video/background-video.mp4" type="video/mp4">
+            </video>
+
+            <div class="home__content">
+                <h1 class="home__title">BEAN BLOCK <br> COFFEE ROASTERS</h1>
+                <a href="#products" class="home__view-more-btn">
+                    <i class="gg-arrow-down"></i>
+                </a>
+            </div>
+        </section>
+
+
+
+        <!--==================== ESPECIALTY ====================
+        <div class="specialty section container" id="specialty">
+            <div class="specialty__container">
+                <h2 class="section__title">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil.
+                </h2>
+                <a href="#" class="button specialty__button">See More</a>
+            </div>
+            <div class="specialty__category">
+                <div class="specialty__group specialty__line">
+                    <img src="assets/img/specialty1.png" alt="" class="specialty__img">
+                    <h3 class="specialty__title">Selected Coffee</h3>
+                    <p class="specialty__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, officia.
+                    </p>
+                </div>
+                <div class="specialty__group specialty__line">
+                    <img src="assets/img/specialty2.png" alt="" class="specialty__img">
+                    <h3 class="specialty__title">Delicious Cookies</h3>
+                    <p class="specialty__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab similique non veritatis!</p>
+                </div>
+                <div class="specialty__group">
+                    <img src="assets/img/specialty3.png" alt="" class="specialty__img">
+                    <h3 class="specialty__title">Enjoy at Home</h3>
+                    <p class="specialty__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+        </div>-->
+
+        <!--==================== PRODUCTS ====================-->
+        <section class="products section" id="products" style="background-color: #323949">
+            <div class="products__container container">
+                <h2 class="section__title">
+                    Choose our delicious and best products
+                </h2>
+                <ul class="products__filters">
+                    <li class="products__item products__line active-product" data-filter=".delicacies">
+                        <h3 class="products__title">Classic Coffee Beans</h3>
+                        <span class="products__stock">7 products</span>
+                    </li>
+                    <li class="products__item products__line" data-filter=".coffee">
+                        <h3 class="products__title">Flavored Coffee Beans</h3>
+                        <span class="products__stock">5 products</span>
+                    </li>
+                    <li class="products__item" data-filter=".cake">
+                        <h3 class="products__title">International Coffee Beans</h3>
+                        <span class="products__stock">3 products</span>
+                    </li>
+                </ul>
+                <div class="products__content grid">
+                    <!--====== Delicacies =======-->
+                    <article class="products__card delicacies">
+                        <div class="products__shape">
+                            <img src="./assets/images/products/classic/atok.png" alt="" class="products__img">
+                        </div>
+
+                        <div class="products__data">
+                            <h3 class="products__name">Atok Benguet</h3>
+                            <button class="button products__button">
+                                <i class='bx bx-shopping-bag'></i>
+                            </button>
+                        </div>
+
+                    </article>
+                    <article class="products__card delicacies">
+                        <div class="products__shape">
+                            <img src="./assets/images/products/classic/daynnight.png" alt="" class="products__img">
+                        </div>
+
+                        <div class="products__data">
+
+                            <button class="button products__button">
+                                <i class='bx bx-shopping-bag'></i>
+                            </button>
+                            <h3 class="products__name">Day 'N' Night</h3>
+                        </div>
+
+                    </article>
+                    <article class="products__card delicacies">
+                        <div class="products__shape">
+                            <img src="./assets/images/products/classic/homeland.png" alt="" class="products__img">
+                        </div>
+
+                        <div class="products__data">
+
+                            <button class="button products__button">
+                                <i class='bx bx-shopping-bag'></i>
+                            </button>
+                            <h3 class="products__name">Homeland Barako</h3>
+                        </div>
+
+                    </article>
+
+                    <article class="products__card delicacies">
+                        <div class="products__shape">
+                            <img src="./assets/images/products/classic/sagadadark.png" alt="" class="products__img">
+                        </div>
+
+                        <div class="products__data">
+
+                            <button class="button products__button">
+                                <i class='bx bx-shopping-bag'></i>
+                            </button>
+                            <h3 class="products__name">Sagada Dark</h3>
+                        </div>
+
+                    </article>
+
+                    <article class="products__card delicacies">
+                        <div class="products__shape">
+                            <img src="./assets/images/products/classic/sagadamed.png" alt="" class="products__img">
+                        </div>
+
+                        <div class="products__data">
+
+                            <button class="button products__button">
+                                <i class='bx bx-shopping-bag'></i>
+                            </button>
+                            <h3 class="products__name">Sagada Medium</h3>
+                        </div>
+
+                    </article>
+
+                    <article class="products__card delicacies">
+                        <div class="products__shape">
+                            <img src="./assets/images/products/classic/smooth.png" alt="" class="products__img">
+                        </div>
+
+                        <div class="products__data">
+
+                            <button class="button products__button">
+                                <i class='bx bx-shopping-bag'></i>
+                            </button>
+                            <h3 class="products__name">Smooth Highlands</h3>
+                        </div>
+
+                    </article>
+
+                    <article class="products__card delicacies">
+                        <div class="products__shape">
+                            <img src="./assets/images/products/classic/smoothdark.png" alt="" class="products__img">
+                        </div>
+
+                        <div class="products__data">
+
+                            <button class="button products__button">
+                                <i class='bx bx-shopping-bag'></i>
+                            </button>
+                            <h3 class="products__name">Smooth Highlands Dark</h3>
+                        </div>
+
+                    </article>
+                    <!--====== Coffee =======-->
+                    <article class="products__card coffee">
+                        <div class="products__shape">
+                            <img src="../assets/images/products/flavored/bright.png" alt="" class="products__img">
+                        </div>
+
+                        <div class="products__data">
+
+                            <button class="button products__button">
+                                <i class='bx bx-shopping-bag'></i>
+                            </button>
+                            <h3 class="products__name">Bright Butterscotch</h3>
+                        </div>
+
+                    </article>
+                    <article class="products__card coffee">
+                        <div class="products__shape">
+                            <img src="./assets/images/products/flavored/bronzed.png" alt="" class="products__img">
+                        </div>
+
+                        <div class="products__data">
+
+                            <button class="button products__button">
+                                <i class='bx bx-shopping-bag'></i>
+                            </button>
+                            <h3 class="products__name">Bronzed Caramel</h3>
+                        </div>
+
+                    </article>
+                    <article class="products__card coffee">
+                        <div class="products__shape">
+                            <img src="./assets/images/products/flavored/java.png" alt="" class="products__img">
+                        </div>
+
+                        <div class="products__data">
+
+                            <button class="button products__button">
+                                <i class='bx bx-shopping-bag'></i>
+                            </button>
+                            <h3 class="products__name">Java Mocha</h3>
+                        </div>
+
+                    </article>
+                    <article class="products__card coffee">
+                        <div class="products__shape">
+                            <img src="./assets/images/products/flavored/nutty.png" alt="" class="products__img">
+                        </div>
+
+                        <div class="products__data">
+
+                            <button class="button products__button">
+                                <i class='bx bx-shopping-bag'></i>
+                            </button>
+                            <h3 class="products__name">Nutty Macadamia</h3>
+                        </div>
+
+                    </article>
+
+                    <article class="products__card coffee">
+                        <div class="products__shape">
+                            <img src="./assets/images/products/flavored/vibrant.png" alt="" class="products__img">
+                        </div>
+
+                        <div class="products__data">
+
+                            <button class="button products__button">
+                                <i class='bx bx-shopping-bag'></i>
+                            </button>
+                            <h3 class="products__name">Vibrant Hazelnut</h3>
+                        </div>
+
+                    </article>
+                    <!--====== Cafe =======-->
+                    <article class="products__card cake">
+                        <div class="products__shape">
+                            <img src="./assets/images/products/international/2.png" alt="" class="products__img">
+                        </div>
+
+                        <div class="products__data">
+
+                            <button class="button products__button">
+                                <i class='bx bx-shopping-bag'></i>
+                            </button>
+                            <h3 class="products__name">Colombia Supremo</h3>
+                        </div>
+
+                    </article>
+                    <article class="products__card cake">
+                        <div class="products__shape">
+                            <img src="./assets/images/products/international/3.png" alt="" class="products__img">
+                        </div>
+
+                        <div class="products__data">
+
+                            <button class="button products__button">
+                                <i class='bx bx-shopping-bag'></i>
+                            </button>
+                            <h3 class="products__name">Ethiopia Yirgacheffe</h3>
+                        </div>
+
+                    </article>
+                    <article class="products__card cake">
+                        <div class="products__shape">
+                            <img src="./assets/images/products/international/bright.png" alt="" class="products__img">
+                        </div>
+
+                        <div class="products__data">
+
+                            <button class="button products__button">
+                                <i class='bx bx-shopping-bag'></i>
+                            </button>
+                            <h3 class="products__name">Brazil Santos</h3>
+                        </div>
+
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== QUALITY ====================
+        <section class="quality section" id="premium">
+            <div class="quality__container container">
+                <h2 class="section__title">
+                    We offer a premium and better quality preparation just for you
+                </h2>
+                <div class="quality__content grid">
+                    <div class="quality__images">
+                        <img src="assets/img/quality1.png" alt="" class="quality__img-big">
+                        <img src="assets/img/quality2.png" alt="" class="quality__img-small">
+                    </div>
+                    <div class="quality__data">
+                        <h1 class="quality__title">Premium Coffee</h1>
+                        <h2 class="quality__price">$94.99</h2>
+                        <span class="quality__special">Especial Price</span>
+                        <p class="quality__description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem qui ea exercitationem saepe accusamus error expedita, voluptatum aliquid deserunt, repellat ex quibusdam possimus nam in.
+                        </p>
+                        <div class="quality__buttons">
+                            <button class="button">
+                                Buy Now
+                            </button>
+                            <a href="#" class="quality__button">
+                                See more
+                                <i class='bx bx-right-arrow-alt'></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        ==================== LOGOS ====================
+        <section class="logo section">
+            <div class="logo__container container grid">
+                <img src="assets/img/logocoffee1.png" alt="" class="logo__img">
+                <img src="assets/img/logocoffee2.png" alt="" class="logo__img">
+                <img src="assets/img/logocoffee3.png" alt="" class="logo__img">
+                <img src="assets/img/logocoffee4.png" alt="" class="logo__img">
+                <img src="assets/img/logocoffee5.png" alt="" class="logo__img">
+            </div>
+        </section>-->
+
+        <!--==================== BLOG ====================-->
+        <section class="blog section" id="blog">
+            <div class="blog__contaier container">
+                <h2 class="section__title">
+                    Our Blog Coffee with trending topic for this week
+                </h2>
+                <div class="blog__content grid">
+                    <article class="blog__card">
+                        <div class="blog__image">
+                            <img src="./assets/images/podcast/landpod.png" alt="" class="blog__img">
+                            <a href="./podcast/podcast.html" class="blog__button">
+                                <i class='bx bx-right-arrow-alt'></i>
+                            </a>
+                        </div>
+                        <div class="blog__data">
+                            <h2 class="blog__title">
+                                Episode 01: Why do we start a coffee shop business?
+                            </h2>
+                        </div>
+                    </article>
+                    <article class="blog__card">
+                        <div class="blog__image">
+                            <img src="./assets/images/podcast/landpod.png" alt="" class="blog__img">
+                            <a href="./podcast/podcast.html" class="blog__button">
+                                <i class='bx bx-right-arrow-alt'></i>
+                            </a>
+                        </div>
+                        <div class="blog__data">
+                            <h2 class="blog__title">
+                                Episode 02: Knowing your 'WHY'
+                            </h2>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+        <div class="footer__container container">
+            <h1 class="footer__title">Bean Block</h1>
+            <div class="footer__content grid">
+                <div class="footer__data">
+                    <p class="footer__description">
+                        Send us an email for more coffee orders
+                    </p>
+                    <div class="footer__newsletter">
+                        <input type="email" placeholder="Your email address" class="footer__input">
+                        <button class="footer__button">
+                            <i class='bx bx-right-arrow-alt'></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="footer__data">
+                    <h2 class="footer__subtitle">Address</h2>
+                    <p class="footer__informantion">
+                        19 Gloria Diaz St. <br> BF Resort Village, Las Piñas City
+                    </p>
+                    <p class="footer__informantion">
+                        <br>311 El Grande St. <br> BF Homes, Parañaque City
+                    </p>
+
+                </div>
+                <div class="footer__data">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3863.488739495624!2d121.00512007555096!3d14.456602180585056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397cffa811ecd99%3A0x95a330fdc5521d16!2sBean%20Block%20Coffee%20Roasters%20-%20Para%C3%B1aque%20City%20Branch!5e0!3m2!1sen!2sph!4v1704381387951!5m2!1sen!2sph"
+                        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <div class="footer__group">
+                <ul class="footer__social">
+                    <a href="https://www.facebook.com/beanblockph" target='_blank' class="footer__social-link">
+                        <i class='bx bxl-facebook'></i>
+                    </a>
+                    <a href="https://open.spotify.com/show/7FLeKPU7Gy2z9bFlIHAoIN?si=a483615aeda14d4c" target='_blank' class="footer__social-link">
+                        <i class='bx bxl-spotify'></i>
+                    </a>
+                    <a href="https://www.instagram.com/beanblockph/" target='_blank' class="footer__social-link">
+                        <i class='bx bxl-instagram'></i>
+                    </a>
+                </ul>
+                <span class="footer__copy">
+                    &#169; 2024 Bean Block. All rights reserved.
+                </span>
+            </div>
+        </div>
+    </footer>
+
+    <!--========== SCROLL UP ==========-->
+    <a href="" class="scrollup" id="scroll-up">
+        <i class='bx bx-up-arrow-alt'></i>
+    </a>
+    <!--=============== MIXITUP FILTER ===============-->
+    <script src="assets/js/mixitup.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
