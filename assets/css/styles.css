@@ -827,7 +827,7 @@ button {
         row-gap: 1rem;
     }
     .footer__data iframe {
-        width: 300px;
+        width: 100px;
     }
 }
 
