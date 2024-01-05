@@ -826,9 +826,6 @@ button {
         flex-direction: column;
         row-gap: 1rem;
     }
-    .footer__data iframe {
-        width: 100px;
-    }
 }
 
 
@@ -1022,6 +1019,9 @@ button {
         margin-top: 3rem;
         flex-direction: row;
         justify-content: space-between;
+    }
+    .footer__data iframe {
+        width: 100px;
     }
 }
 
