@@ -826,6 +826,9 @@ button {
         flex-direction: column;
         row-gap: 1rem;
     }
+    .footer__data {
+        width: 300px;
+    }
 }
 
 
